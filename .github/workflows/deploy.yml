@@ -28,4 +28,4 @@ jobs:
           aws-region: 'us-east-1'
       - name: cdk deploy
         working-directory: ./cdk
-        run: cdk deploy --all --require-approval never
+        run: npm run deploy
