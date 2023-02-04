@@ -17,11 +17,11 @@ jobs:
          pwd
          ls
 
-  Deploy:
-    runs-on: ubuntu-latest
-    needs: Build
+#  Deploy:
+#    runs-on: ubuntu-latest
+#    needs: Build
     #    if: ${{github.ref == 'refs/heads/main'}}
-    steps:
+#    steps:
 #      - name: GitHub Checkout
 #        uses: actions/checkout@v2
       - name: Configure aws credentials
