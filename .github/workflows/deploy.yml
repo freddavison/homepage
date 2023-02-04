@@ -12,6 +12,9 @@ jobs:
       - name: npm build
         working-directory: ./webpage
         run: npm run build
+      - name: npm install - cdk
+        working-directory: ./cdk
+        run: npm ci
 
   Deploy:
     runs-on: ubuntu-latest
