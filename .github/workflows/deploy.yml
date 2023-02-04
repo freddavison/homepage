@@ -22,8 +22,8 @@ jobs:
     needs: Build
     #    if: ${{github.ref == 'refs/heads/main'}}
     steps:
-      - name: GitHub Checkout
-        uses: actions/checkout@v2
+#      - name: GitHub Checkout
+#        uses: actions/checkout@v2
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@master
         with:
