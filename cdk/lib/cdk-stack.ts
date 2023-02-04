@@ -12,8 +12,8 @@ export class CdkStack extends cdk.Stack {
       websiteIndexDocument: 'index.html'
     });
 
-    const deployment = new s3Deployment.BucketDeployment(this, 'deployStaticWebsite', {
-      sources: [s3Deployment.Source.asset('../webpage/build')],
+    new s3Deployment.BucketDeployment(this, 'deployStaticWebsite', {
+      sources: [s3Deployment.Source.asset((`${__dirname}/../../webpage/build`))],
       destinationBucket: myBucket
     });
   }
