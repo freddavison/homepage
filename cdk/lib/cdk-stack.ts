@@ -12,7 +12,7 @@ export class CdkStack extends cdk.Stack {
       websiteIndexDocument: 'index.html'
     });
 
-    const deployment = new s3Deployment.BucketDeployment(this, 'deployStaticWebsite', {
+    new s3Deployment.BucketDeployment(this, 'deployStaticWebsite', {
       sources: [s3Deployment.Source.asset('../webpage/build')],
       destinationBucket: myBucket
     });
