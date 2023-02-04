@@ -1,7 +1,7 @@
 name: deploy
 on: [ push ]
 jobs:
-  Build:
+  Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Checkout
@@ -12,18 +12,6 @@ jobs:
       - name: npm build
         working-directory: ./webpage
         run: npm run build
-      - run: |
-         cd webpage
-         pwd
-         ls
-
-#  Deploy:
-#    runs-on: ubuntu-latest
-#    needs: Build
-    #    if: ${{github.ref == 'refs/heads/main'}}
-#    steps:
-#      - name: GitHub Checkout
-#        uses: actions/checkout@v2
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@master
         with:
@@ -36,13 +24,9 @@ jobs:
       - name: npm install
         working-directory: ./cdk
         run: npm ci
-      - run: |
-          cd webpage
-          pwd
-          ls
-#      - name: cdk bootstrap
-#        working-directory: ./cdk
-#        run: npm run bootstrap
-#      - name: cdk deploy
-#        working-directory: ./cdk
-#        run: npm run deploy
+      - name: cdk bootstrap
+        working-directory: ./cdk
+        run: npm run bootstrap
+      - name: cdk deploy
+        working-directory: ./cdk
+        run: npm run deploy
