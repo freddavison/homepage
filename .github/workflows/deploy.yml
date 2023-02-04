@@ -13,6 +13,21 @@ jobs:
         working-directory: ./webpage
         run: npm run build
 
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: Build
+    if: ${{github.ref == 'refs/heads/main'}}
+    steps:
+      - name: Configure aws credentials
+        uses: aws-actions/configure-aws-credentials@master
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+          aws-region: 'us-east-1'
+      - name: cdk deploy
+        working-directory: ./cdk
+        run: cdk deploy
+
 #  deploy:
 #    runs-on: ubuntu-latest
 #    steps:
