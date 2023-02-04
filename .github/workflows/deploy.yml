@@ -12,6 +12,9 @@ jobs:
       - name: npm build
         working-directory: ./webpage
         run: npm run build
+      - run: |
+         pwd
+         ls
 
   Deploy:
     runs-on: ubuntu-latest
