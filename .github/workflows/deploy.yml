@@ -32,8 +32,10 @@ jobs:
       - name: npm install
         working-directory: ./cdk
         run: npm ci
-      - run: cd webpage
-      - run: ls
+      - run: |
+          cd webpage
+          pwd
+          ls
 #      - name: cdk bootstrap
 #        working-directory: ./cdk
 #        run: npm run bootstrap
