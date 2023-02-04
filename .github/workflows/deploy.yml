@@ -12,6 +12,8 @@ jobs:
       - name: npm build
         working-directory: ./webpage
         run: npm run build
+        - run: ls
+
 
   Deploy:
     runs-on: ubuntu-latest
@@ -34,6 +36,10 @@ jobs:
         run: npm ci
       - run: echo $GITHUB_WORKSPACE
       - run: ls
+      - name: npm build
+        working-directory: ./webpage
+        run: npm run build
+        - run: ls
 #      - name: cdk bootstrap
 #        working-directory: ./cdk
 #        run: npm run bootstrap
