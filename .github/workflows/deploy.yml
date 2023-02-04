@@ -32,7 +32,7 @@ jobs:
       - name: npm install
         working-directory: ./cdk
         run: npm ci
-      - name: cdk deploy
+      - name: cdk bootstrap
         working-directory: ./cdk
         run: npm run bootstrap
       - name: cdk deploy

@@ -13,7 +13,7 @@ export class CdkStack extends cdk.Stack {
     });
 
     new s3Deployment.BucketDeployment(this, 'deployStaticWebsite', {
-      sources: [s3Deployment.Source.asset('../webpage/build')],
+      sources: [s3Deployment.Source.asset((`${__dirname}/../../webpage/build`))],
       destinationBucket: myBucket
     });
   }
