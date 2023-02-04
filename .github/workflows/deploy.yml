@@ -32,11 +32,12 @@ jobs:
       - name: npm install
         working-directory: ./cdk
         run: npm ci
-      - run: echo "ls"
-      - run: echo "pwd"
-#      - name: cdk bootstrap
-#        working-directory: ./cdk
-#        run: npm run bootstrap
-#      - name: cdk deploy
-#        working-directory: ./cdk
-#        run: npm run deploy
+      - run: echo $PATH
+      - run: echo $GITHUB_WORKSPACE
+      - run: echo $GITHUB_EVENT_PATH
+      - name: cdk bootstrap
+        working-directory: ./cdk
+        run: npm run bootstrap
+      - name: cdk deploy
+        working-directory: ./cdk
+        run: npm run deploy
