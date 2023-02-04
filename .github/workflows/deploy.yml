@@ -27,8 +27,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: 'us-east-1'
       - uses: actions/setup-node@v2
-          with:
-            node-version: "14"
+        with:
+          node-version: "14"
       - name: cdk synth
         run: cdk synth
       - name: cdk deploy
