@@ -1,0 +1,21 @@
+.app {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.app div {
+    font-family: Monaco, sans-serif;
+    height: 497px;
+    width: 497px;
+    margin: 75px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid #BA0C2F;
+}
+
+.app h1 {
+    font-size: 8rem;
+}
