@@ -13,8 +13,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /*border: 5px solid #BA0C2F;*/
-    border: 5px solid mediumblue;
+    border: 5px solid #BA0C2F;
 }
 
 .app h1 {
