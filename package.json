@@ -1,0 +1,17 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "repository": "git@github.com:freddavison/homepage.git",
+  "author": "fred",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "yarn workspace webpage start",
+    "build": "yarn workspace webpage build",
+    "deploy": "yarn workspace cdk deploy"
+  },
+  "workspaces": [
+    "cdk",
+    "webpage"
+  ]
+}
