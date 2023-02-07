@@ -8,12 +8,12 @@ jobs:
   Deploy:
     runs-on: ubuntu-latest
     needs: Build
-#    if: ${{github.ref == 'refs/heads/main'}}
+    if: ${{github.ref == 'refs/heads/main'}}
     steps:
       - name: GitHub Checkout
         uses: actions/checkout@v2
-      - name: yarn install --immutable --immutable-cache
-        run: yarn
+      - name: yarn install
+        run: yarn install --immutable --immutable-cache
       - name: yarn run build
         working-directory: ./webpage
         run: yarn run build
