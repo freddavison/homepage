@@ -29,5 +29,7 @@
     "@aws-cdk/core": "^1.191.0",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.21"
-  }
+  },
+  "main": "index.js",
+  "license": "MIT"
 }

@@ -12,12 +12,11 @@ jobs:
     steps:
       - name: GitHub Checkout
         uses: actions/checkout@v2
-      - name: npm install
+      - name: yarn install
+        run: yarn install --immutable --immutable-cache
+      - name: yarn run build
         working-directory: ./webpage
-        run: npm ci
-      - name: npm build
-        working-directory: ./webpage
-        run: npm run build
+        run: yarn run build
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@master
         with:
@@ -27,12 +26,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
-      - name: npm install
-        working-directory: ./cdk
-        run: npm ci
-      - name: cdk bootstrap
-        working-directory: ./cdk
-        run: npm run bootstrap
       - name: cdk deploy
-        working-directory: ./cdk
-        run: npm run deploy
+        run: yarn run deploy
