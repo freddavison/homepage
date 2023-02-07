@@ -1,0 +1,24 @@
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    font-size: 2.5rem;
+    margin: 40px 15px;
+}
+
+@media (min-width: 800px) {
+    .link:hover {
+        cursor: pointer;
+        color: #ba0c2f;
+    }
+}
