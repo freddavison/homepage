@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    top: 0;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 75px;
+}
+
+.header h2 {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+@media (min-width: 800px) {
+    .header h2:hover {
+        cursor: pointer;
+        color: #ba0c2f;
+    }
+}
