@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding-left: 75px;
+    padding-left: 35px;
 }
 
 .header h2 {
@@ -13,9 +13,20 @@
     font-size: 1.25rem;
 }
 
+.left {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
 @media (min-width: 800px) {
     .header h2:hover {
         cursor: pointer;
         color: #ba0c2f;
     }
+
+.left h2 {
+    font-size: 1.5rem;
+}
 }
