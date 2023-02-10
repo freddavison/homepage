@@ -1,12 +1,11 @@
 import styles from '../styles/logo.module.css';
 import {Link} from 'react-router-dom';
 
-export const Logo = () => {
+export const About = () => {
     return (
-        <Link to="/about">
+        <Link to='/'>
             <div className={`${styles.logo}`}>
-                <h1>Fred</h1>
-                <h1>Davison</h1>
+                <p>full-stack developer</p>
             </div>
         </Link>
     );

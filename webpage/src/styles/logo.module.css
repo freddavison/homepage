@@ -18,6 +18,11 @@
     text-align: center;
 }
 
+.logo p {
+    font-size: 2rem;
+    text-align: center;
+}
+
 @media (min-width: 800px) {
     .logo {
         height: 445px;
@@ -36,5 +41,10 @@
 
     .logo h2 {
         font-size: 14rem;
+    }
+
+    .logo p {
+        font-size: 3.5rem;
+        text-align: center;
     }
 }
