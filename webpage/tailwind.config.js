@@ -5,7 +5,7 @@ module.exports = {
         extend: {},
         colors: {
             'georgia': '#ba0c2f',
-            'fidelity': '#76a923'
+            'fidelity': '#368727'
         }
     },
     plugins: [],
