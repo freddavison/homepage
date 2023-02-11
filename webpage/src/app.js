@@ -1,20 +1,26 @@
-import styles from './styles/app.module.css';
-import {Logo} from './components/logo';
-import {About} from './components/about';
-import {NotFound} from './components/not-found';
+import './styles/input.css';
+import {useState} from 'react';
+import {Header} from './components/header';
 import {Footer} from './components/footer';
 import {Routes, Route} from 'react-router-dom';
+import {Square} from './components/square';
+import {about, landing, notFound} from './constants/content';
 
-function App() {
+const App = () => {
+    const [index, changeIndex] = useState(true);
+    const changeColor = () => changeIndex(!index);
     return (
-        <div className={`${styles.app}`}>
-            <Routes>
-                <Route path='/' element={<Logo/>}/>
-                <Route path='/about' element={<About/>}/>
-                <Route path='*' element={<NotFound/>}/>
-            </Routes>
-            <Footer/>
-        </div>
+        <>
+            <div className="main flex items-center justify-center items-center">
+                <Header color={index} changeColor={changeColor}/>
+                <Routes>
+                    <Route path="/" element={<Square link='/about' content={landing} color={index}/>}/>
+                    <Route path="/about" element={<Square link='/' content={about} color={index}/>}/>
+                    <Route path="/*" element={<Square link='/' content={notFound} color={index}/>}/>
+                </Routes>
+            </div>
+            <Footer color={index}/>
+        </>
     );
 }
 
