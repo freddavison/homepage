@@ -8,12 +8,10 @@
 
 header i {
     font-size: 2.5rem;
-    margin: 25px;
 }
 
 header i:hover {
     cursor: pointer;
-    color: #ba0c2f;
 }
 
 .link {
@@ -25,11 +23,8 @@ header i:hover {
     font-family: Monaco, sans-serif;
     height: 270px;
     width: 270px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 4px solid #BA0C2F;
-    background: #ba0c2f;
+    border: 4px solid theme('colors.georgia');
+    background: theme('colors.georgia');
 }
 
 .square h1 {
@@ -38,7 +33,6 @@ header i:hover {
 
 .square h2 {
     font-size: 8rem;
-    text-align: center;
 }
 
 .square p {
@@ -60,13 +54,13 @@ header i:hover {
     .square {
         height: 445px;
         width: 445px;
-        background: black;
-        border: 5px solid #BA0C2F;
+        /*background: black;*/
+        /*border: 5px solid theme('colors.georgia');*/
     }
 
-    .square:hover {
-        background: #ba0c2f;
-    }
+    /*.square:hover {*/
+    /*    background: theme('colors.georgia');*/
+    /*}*/
 
     .square h1 {
         font-size: 7rem;
@@ -78,6 +72,5 @@ header i:hover {
 
     .square p {
         font-size: 3.5rem;
-        text-align: center;
     }
 }
