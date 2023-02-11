@@ -1,4 +1,4 @@
-.logo {
+.square {
     font-family: Monaco, sans-serif;
     height: 270px;
     width: 270px;
@@ -9,41 +9,41 @@
     background: #ba0c2f;
 }
 
-.logo h1 {
+.square h1 {
     font-size: 4.25rem;
 }
 
-.logo h2 {
+.square h2 {
     font-size: 8rem;
     text-align: center;
 }
 
-.logo p {
+.square p {
     font-size: 2rem;
     text-align: center;
 }
 
 @media (min-width: 800px) {
-    .logo {
+    .square {
         height: 445px;
         width: 445px;
         background: black;
         border: 5px solid #BA0C2F;
     }
 
-    .logo:hover {
+    .square:hover {
         background: #ba0c2f;
     }
 
-    .logo h1 {
+    .square h1 {
         font-size: 7rem;
     }
 
-    .logo h2 {
+    .square h2 {
         font-size: 14rem;
     }
 
-    .logo p {
+    .square p {
         font-size: 3.5rem;
         text-align: center;
     }
