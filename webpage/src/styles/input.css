@@ -24,7 +24,6 @@ header i:hover {
     height: 270px;
     width: 270px;
     border: 4px solid theme('colors.georgia');
-    background: theme('colors.georgia');
 }
 
 .square h1 {
@@ -43,7 +42,6 @@ header i:hover {
 @media (min-width: 800px) {
     .link:hover {
         cursor: pointer;
-        color: #ba0c2f;
     }
 
     .link {
@@ -54,13 +52,7 @@ header i:hover {
     .square {
         height: 445px;
         width: 445px;
-        /*background: black;*/
-        /*border: 5px solid theme('colors.georgia');*/
     }
-
-    /*.square:hover {*/
-    /*    background: theme('colors.georgia');*/
-    /*}*/
 
     .square h1 {
         font-size: 7rem;

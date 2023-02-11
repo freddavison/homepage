@@ -4,7 +4,8 @@ module.exports = {
     theme: {
         extend: {},
         colors: {
-            'georgia': '#ba0c2f'
+            'georgia': '#ba0c2f',
+            'fidelity': '#76a923'
         }
     },
     plugins: [],
