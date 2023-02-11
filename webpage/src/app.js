@@ -8,20 +8,18 @@ import {about, landing, notFound} from './constants/content';
 
 const App = () => {
     const [index, changeIndex] = useState(true);
-    const colors = ['georgia', 'fidelity']
-    const color = index ? colors[0] : colors[1];
-    const nextColor = !index ? colors[0] : colors[1];
+    const changeColor = () => changeIndex(!index);
     return (
         <>
             <div className="main flex items-center justify-center items-center">
-                <Header color={nextColor} changeIndex={changeIndex} index={index}/>
+                <Header color={index} changeColor={changeColor}/>
                 <Routes>
-                    <Route path="/" element={<Square link='/about' content={landing} color={color}/>}/>
-                    <Route path="/about" element={<Square link='/' content={about} color={color}/>}/>
-                    <Route path="/*" element={<Square link='/' content={notFound} color={color}/>}/>
+                    <Route path="/" element={<Square link='/about' content={landing} color={index}/>}/>
+                    <Route path="/about" element={<Square link='/' content={about} color={index}/>}/>
+                    <Route path="/*" element={<Square link='/' content={notFound} color={index}/>}/>
                 </Routes>
             </div>
-            <Footer color={color}/>
+            <Footer color={index}/>
         </>
     );
 }
