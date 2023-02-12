@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "eslint \"*src/*.js\" --fix",
-    "verify": "eslint \"*src/*.js\""
+    "verify": "yarn run eslint \"*src/*.js\""
   },
   "eslintConfig": {
     "extends": [
