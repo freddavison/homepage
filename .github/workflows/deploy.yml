@@ -4,7 +4,12 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "build"
+      - name: GitHub Checkout
+        uses: actions/checkout@v2
+      - name: yarn install
+        run: yarn
+      - name: verify
+        run: yarn run verify
   Deploy:
     runs-on: ubuntu-latest
     needs: Build

@@ -13,7 +13,7 @@ const getCss = index => {
 export const Square = props => {
     return (
         <Link to={props.link}>
-            <div className={getCss(props.color)}>
+            <div className={getCss(props.index)}>
                 {props.content}
             </div>
         </Link>

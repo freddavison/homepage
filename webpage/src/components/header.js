@@ -10,8 +10,8 @@ const getCss = index => {
 
 export const Header = props => {
     return (
-        <header className="flex fixed top-0 right-0 m-8">
-            <i className={getCss(props.color)} onClick={() => props.changeColor()}></i>
+        <header className='flex fixed top-0 right-0 m-8'>
+            <i className={getCss(props.index)} onClick={() => props.changeColor()}></i>
         </header>
     );
 };
