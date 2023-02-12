@@ -14,5 +14,8 @@
   "workspaces": [
     "cdk",
     "webpage"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^8.34.0"
+  }
 }
