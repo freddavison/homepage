@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: GitHub Checkout
         uses: actions/checkout@v2
+      - name: yarn install
+        run: yarn
       - name: verify
         run: yarn run verify
   Deploy:
