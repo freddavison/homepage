@@ -8,7 +8,8 @@
   "scripts": {
     "start": "yarn workspace webpage start",
     "build": "yarn workspace webpage build",
-    "deploy": "yarn workspace cdk deploy"
+    "deploy": "yarn workspace cdk deploy",
+    "verify": "yarn workspace webpage verify"
   },
   "workspaces": [
     "cdk",

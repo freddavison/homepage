@@ -4,7 +4,8 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "build"
+      - name: verify
+        run: yarn run verify
   Deploy:
     runs-on: ubuntu-latest
     needs: Build
