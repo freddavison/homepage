@@ -1,3 +1,5 @@
+import {links} from '../constants/links';
+
 const GEORGIA = 'link hover:text-georgia';
 const FIDELITY = 'link hover:text-fidelity';
 const LIBERTY = 'link hover:text-liberty-100';
@@ -12,16 +14,13 @@ export const Footer = props => {
     return (
         <footer className='flex justify-center align-items'>
             <div className='flex'>
-                <div className={getCss(props.color)}>
-                    <a href='https://github.com/freddavison' target='_blank' rel='noreferrer'>
-                        <i className='fa-brands fa-github'></i>
-                    </a>
-                </div>
-                <div className={getCss(props.color)}>
-                    <a href='https://www.linkedin.com/in/fdavison1' target='_blank' rel='noreferrer'>
-                        <i className='fa-brands fa-linkedin'></i>
-                    </a>
-                </div>
+                {links.map(link => {
+                    return <div className={getCss(props.index)}>
+                        <a href={link.url} rel='noreferrer'>
+                            <i className={link.icon}></i>
+                        </a>
+                    </div>;
+                })}
             </div>
         </footer>
     );
