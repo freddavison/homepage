@@ -1,17 +1,16 @@
 import './styles/input.css';
 import {Routes, Route} from 'react-router-dom';
 import {Footer} from './components/footer';
-import {Square} from './components/square';
-import {about, landing, notFound} from './constants/content';
+import {Home} from './pages/Home';
+import {Error} from './pages/Error';
 
 const App = () => {
     return (
         <>
             <div className='main flex items-center justify-center items-center'>
                 <Routes>
-                    <Route path='/' element={<Square link='/about' content={landing}/>}/>
-                    <Route path='/about' element={<Square link='/' content={about}/>}/>
-                    <Route path='/*' element={<Square link='/' content={notFound}/>}/>
+                    <Route path='/' element={<Home/>}/>
+                    <Route path='/*' element={<Error/>}/>
                 </Routes>
             </div>
             <Footer/>
