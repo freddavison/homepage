@@ -3,6 +3,7 @@ import {config} from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import Image from 'next/image';
 
 config.autoAddCss = false;
 
@@ -16,7 +17,7 @@ function MyApp() {
                         <h2 className='text-3xl text-base-100'>full-stack developer</h2>
                         <div className='avatar m-5'>
                             <div className='w-36 rounded-full'>
-                                <img src='https://avatars.githubusercontent.com/u/76531816?v=4'/>
+                                <Image src='https://avatars.githubusercontent.com/u/76531816?v=4'/>
                             </div>
                         </div>
                         <div className={'flex justify-evenly'}>
