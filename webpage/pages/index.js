@@ -16,7 +16,7 @@ const Home = () => {
             </Head>
             <div className='hero-content text-center'>
                 <div className='max-w-md'>
-                    <div className='card w-96 bg-primary py-10 shadow-xl flex items-center mb-9'>
+                    <div className='card bg-primary py-10 shadow-xl flex items-center p-3 mb-9'>
                         <h1 className='text-5xl font-bold text-base-100'>Fred Davison</h1>
                         <h2 className='text-3xl text-base-100'>full-stack developer</h2>
                         <div className='avatar m-5'>
