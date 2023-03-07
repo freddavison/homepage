@@ -21,7 +21,7 @@ const Home = () => {
                         <h2 className='text-3xl text-base-100'>full-stack developer</h2>
                         <div className='avatar m-5'>
                             <div className='w-36 rounded-full'>
-                                <img src='https://avatars.githubusercontent.com/u/76531816?s=400&u=f8613094654ac38f8eaf9b6389dee7b291c59861&v=4'/>
+                                <img src='https://avatars.githubusercontent.com/u/76531816?s=400&u=3d116c97bc79963f5e3855a89c57b004332e28a3&v=4'/>
                             </div>
                         </div>
                         <div className={'flex justify-evenly'}>
