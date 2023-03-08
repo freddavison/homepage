@@ -7,7 +7,7 @@ const Home = () => {
         <div className='hero min-h-screen bg-base-100' data-theme='synthwave'>
             <Head>
                 <title>Fred Davison</title>
-                <meta name='description' content='developer homepage'/>
+                <meta name='description' content='homepage and links'/>
                 <link rel='icon' href='/images/favicon.ico'/>
             </Head>
             <div className='hero-content text-center'>
