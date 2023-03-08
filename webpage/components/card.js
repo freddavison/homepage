@@ -4,7 +4,7 @@ import {Button} from './button';
 export const Card = () => {
     return (
         <>
-            <div className='card bg-primary py-10 shadow-xl flex items-center p-3 mb-9'>
+            <div className='card bg-primary py-10 shadow-xl flex items-center p-3 mb-5'>
                 <h1 className='text-5xl font-bold text-base-100'>Fred Davison</h1>
                 <h2 className='text-3xl text-base-100'>homepage and links</h2>
                 <div className='avatar m-5'>
