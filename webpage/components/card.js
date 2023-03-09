@@ -14,9 +14,9 @@ export const Card = () => {
                                 src='https://avatars.githubusercontent.com/u/76531816?s=400&u=3d116c97bc79963f5e3855a89c57b004332e28a3&v=4'/>
                         </div>
                     </div>
-                    <Button link={'https://github.com/freddavison'} icon={faGithub}/>
-                    <Button link={'https://www.linkedin.com/in/fdavison1'} icon={faLinkedin}/>
-                    <Button link={'https://www.instagram.com/midwest_fred'} icon={faInstagram}/>
+                    <Button link={'https://github.com/freddavison'} icon={faGithub} label={'GitHub'}/>
+                    <Button link={'https://www.linkedin.com/in/fdavison1'} icon={faLinkedin} label={'LinkedIn'}/>
+                    <Button link={'https://www.instagram.com/midwest_fred'} icon={faInstagram} label={'Instagram'}/>
                 </div>
             </div>
         </>
