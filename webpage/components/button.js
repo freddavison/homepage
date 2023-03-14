@@ -1,8 +1,14 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import useAnalyticsEventTracker from '../util/useAnalyticsEventTracker';
+// import useAnalyticsEventTracker from '../util/useAnalyticsEventTracker';
+import {event} from '../lib/gtag';
 
 export const Button = props => {
-    const gaEventTracker = useAnalyticsEventTracker(`button ${props.label}`);
+    const gaEventTracker = () => event({
+        action: 'button click',
+        category: 'button',
+        label: `button ${props.label}`,
+        value: props.label
+});
 
     return (
         <a href={props.link} rel='noreferrer' target={'_blank'} onClick={()=> gaEventTracker(props.label)}>
