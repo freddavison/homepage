@@ -1,5 +1,4 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import useAnalyticsEventTracker from '../util/useAnalyticsEventTracker';
 import {event} from '../lib/gtag';
 
 export const Button = props => {
