@@ -1,4 +1,4 @@
-import {faGithub, faLinkedin, faInstagram} from '@fortawesome/free-brands-svg-icons';
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {Button} from './button';
 
 export const Card = () => {
@@ -16,7 +16,6 @@ export const Card = () => {
                     </div>
                     <Button link={'https://github.com/freddavison'} icon={faGithub} label={'GitHub'}/>
                     <Button link={'https://www.linkedin.com/in/fdavison1'} icon={faLinkedin} label={'LinkedIn'}/>
-                    <Button link={'https://www.instagram.com/midwest_fred'} icon={faInstagram} label={'Instagram'}/>
                 </div>
             </div>
         </>
