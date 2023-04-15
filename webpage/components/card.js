@@ -1,4 +1,4 @@
-import {faGithub, faLinkedin, faInstagram} from '@fortawesome/free-brands-svg-icons';
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {Button} from './button';
 
 export const Card = () => {
