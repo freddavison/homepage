@@ -5,8 +5,8 @@ export const Card = () => (
     <>
         <div className='mockup-window shadow-xl bg-base-300'>
             <div className='flex justify-center py-5 px-10 md:px-15 bg-primary flex items-center flex-col'>
-                <h1 className='text-4xl md:text-5xl font-bold text-base-100'>Fred Davison</h1>
-                <h2 className='text-2xl md:text-3xl text-base-100'>homepage and links</h2>
+                <h1 className='text-4xl md:text-5xl font-bold text-base-100'>{'Fred Davison'}</h1>
+                <h2 className='text-2xl md:text-3xl text-base-100'>{'homepage and links'}</h2>
                 <div className='avatar m-5'>
                     <div className='w-36 mask mask-squircle'>
                         <img

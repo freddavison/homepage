@@ -1,22 +1,22 @@
 name: deploy
 on: [ push ]
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: yarn install
         run: yarn
       - name: verify
         run: yarn run verify
-  Deploy:
+  deploy:
     runs-on: ubuntu-latest
-    needs: Build
+    needs: build
     if: ${{github.ref == 'refs/heads/main'}}
     steps:
       - name: GitHub Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: yarn install
         run: yarn install --immutable --immutable-cache
       - name: yarn run build
@@ -28,8 +28,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: 'us-east-1'
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "14"
+      - uses: actions/setup-node@v3
       - name: cdk deploy
         run: yarn run deploy
