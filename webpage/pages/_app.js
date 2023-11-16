@@ -1,4 +1,5 @@
-import '../styles/globals.css';
+import '../css/pico.min.css';
+import '../css/App.css';
 import ReactGA from 'react-ga';
 import Script from 'next/script';
 

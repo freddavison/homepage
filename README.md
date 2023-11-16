@@ -1,6 +1,5 @@
 # [freddavison.dev](https://www.freddavison.dev/)
-![screenshot](/assets/thumbnail.png)
 
-Personal homepage created with React, AWS CDK, and GitHub Actions.
+Personal homepage created with Next.js, AWS CDK, and GitHub Actions.
 
-Styled with tailwindcss and daisyui. 
+Styled with [Pico](https://picocss.com). 
