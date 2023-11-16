@@ -1,7 +1,6 @@
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import Head from 'next/head';
-import {Button} from '../components/button';
-import {faGithub, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {buttons} from '../components/buttons';
 
 const Home = () => (
     <div className='hero min-h-screen bg-base-100' data-theme='synthwave'>
@@ -15,9 +14,7 @@ const Home = () => (
                 <header>
                     <h3>{'Fred Davison'}<span>{' | Software Engineer'}</span></h3>
                 </header>
-                <Button link={'https://github.com/freddavison'} icon={faGithub} label={'GitHub'}/>
-                <Button link={'https://www.linkedin.com/in/fdavison1'} icon={faLinkedin} label={'LinkedIn'}/>
-                <Button link={'https://www.instagram.com/hilltown.fred'} icon={faInstagram} label={'Instagram'}/>
+                {buttons}
             </article>
         </div>
     </div>
