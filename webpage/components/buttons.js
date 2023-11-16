@@ -9,7 +9,7 @@ const buttonProps = [
 
 export const buttons = buttonProps.map(button => {
     return (
-        <a href={button.link} rel='noreferrer'>
+        <a key={button.label} href={button.link} rel='noreferrer'>
             <button>
                 <FontAwesomeIcon icon={button.icon} className={'icon'}/>
                 <p>{button.label}</p>
