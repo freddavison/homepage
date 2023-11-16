@@ -10,9 +10,9 @@ const gaEventTracker = (label) => event({
 
 export const Button = (props) => (
     <a href={props.link} rel='noreferrer' onClick={() => gaEventTracker(props.label)}>
-        <button className={'btn btn-accent btn-lg m-1 px-10 md:w-60 md:px-5 flex justify-start'}>
-            <FontAwesomeIcon icon={props.icon} className={'text-5xl px-4'}/>
-            <p className={'hidden md:inline'}>{props.label}</p>
+        <button>
+            <FontAwesomeIcon icon={props.icon} className={'icon'}/>
+            <p>{props.label}</p>
         </button>
     </a>
 );
