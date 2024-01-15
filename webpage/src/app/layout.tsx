@@ -3,8 +3,8 @@ import '../css/reset.css'
 import '../css/brand.css'
 
 export const metadata: Metadata = {
-  title: 'wireframe',
-  description: 'staging env for homepage',
+  title: 'Fred Davison | Software Engineer',
+  description: 'homepage',
 }
 
 export default function RootLayout({
