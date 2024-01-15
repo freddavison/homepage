@@ -1,3 +1,4 @@
+// @ts-ignore
 export const Button = (props) => {
     const {label, url} = props.link;
     return (
