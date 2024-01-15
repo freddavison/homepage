@@ -1,0 +1,80 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+    background: black;
+}
+
+header, .main, button {
+    color: white;
+}
+
+.main {
+    min-width: 300px;
+    background: #2d2d2d;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+button {
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px 50px;
+    margin: 5px 5px 5px 0;
+    background: black;
+    font-size: 1.25rem;
+    width: 250px;
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    height: 2.5rem;
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        height: 3.5rem;
+    }
+
+    button {
+        font-size: 1.25rem;
+        padding: 10px 0;
+    }
+
+    .main {
+        width: 350px;
+        background: #2d2d2d;
+        margin: 0 auto;
+        height: 100vh;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: black;
+        background: white;
+    }
+}
