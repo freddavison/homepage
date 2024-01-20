@@ -9,7 +9,7 @@ header, .main, button {
 
 .main {
     min-width: 300px;
-    background: #2d2d2d;
+    /*background: #2d2d2d;*/
     margin: 0 auto;
     height: 100vh;
 }
@@ -67,7 +67,7 @@ button {
 
     .main {
         width: 350px;
-        background: #2d2d2d;
+        /*background: #2d2d2d;*/
         margin: 0 auto;
         height: 100vh;
     }
